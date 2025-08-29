@@ -1,0 +1,128 @@
+
+
+:root {
+  --bg-pink: #feb6e2;
+  --tile-pink: rgb(211, 141, 184);
+  --font-body: "Nanum Myeongjo", serif;
+  --font-title: "Gaegu", sans-serif;
+}
+
+
+body {
+  margin: 0;                    
+  background-color: var(--bg-pink);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  color: #000;
+}
+
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 48px 56px;           
+  display: grid;
+  grid-template-columns: minmax(560px, 640px) 1fr; 
+  gap: 64px;                    
+}
+
+
+.tiles {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.tile {
+  background: var(--tile-pink);
+  box-shadow: 2px 4px 8px rgba(0,0,0,.15);
+  height: 180px;                
+  padding: 36px 80px 38px 64px; /* top/right/bottom/left (left inset for text) */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.tile:hover {
+  box-shadow: 2px 8px 16px rgba(0,0,0,.2);
+}
+
+
+.bio h1 {
+  font-family: var(--font-title);
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: -1px;
+  text-align: right;
+  margin: 0 0 16px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;             /* gives us room to push the CTA to bottom-right */
+  margin-left: 100px;
+}
+
+.bio p {
+  max-width: 100%;              /* readable line length */
+  font-size: 19px;
+}
+
+.bio a {
+  color: inherit;                /* make link black */
+  text-decoration: underline;
+}
+
+.email {
+  margin-top: 150px; /* push it way down */
+  font-size: 18px;
+}
+
+
+.cta {
+  font-family: var(--font-title);
+  position: absolute;
+  bottom: 7rem;        /* stick to bottom */
+  right: 9rem;         /* align to the right */
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+
+.cta svg {
+  margin-left: 8px;
+  transform: scale(1.5);   /* 1.5x larger */
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 32px 24px;
+  }
+  .bio { margin-left: 0; }
+  .bio h1 { 
+    text-align: left;
+   }
+  .tile { height: 160px; padding: 32px 28px 32px 40px; }
+
+  .cta {
+    position:relative;
+    bottom: 0;        
+    right: 0;
+    margin: 50px;
+  }
+}
+
