@@ -17,7 +17,7 @@ export default function Home() {
           <h1>HELEN CHEN</h1>
           <p>
             Helen is a writer and artist born in Arkansas and raised in Brooklyn, where she is currently based.
-            She recently received her BA in English and creative writing from Columbia, where she was the
+            She recently received her BA in English and Creative Writing from Columbia University, where she was the
             recipient of the Williams Fellowship and the Arthur Ford Poetry Prize. Her published poems, prose,
             and journalism can be found here. She is a lover of water bodies and loves being related to everything.
           </p>
