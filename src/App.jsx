@@ -10,7 +10,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/prose" element={<WritingListPage kind="prose" />} />
       <Route path="/poems" element={<WritingListPage kind="poems" />} />
-      <Route path="/journalism" element={<WritingListPage kind="journalism" />} />
+      <Route path="/Articles_Essays" element={<WritingListPage kind="Articles_Essays" />} />
       <Route path="/designs" element={<DesignsGrid />} />
       <Route path="/designs/:id" element={<DesignDetail />} />
     </Routes>

@@ -7,7 +7,7 @@ export const writings = {
     { title: "Lint Trap", href: "#" },
     { title: "Borrowed Water", href: "#" },
   ],
-  journalism: [
+  Articles_Essays: [
     { title: "Neighborhood Tide Pools", href: "#" },
     { title: "A Librarian’s Map", href: "#" },
   ],

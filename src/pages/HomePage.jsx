@@ -8,7 +8,7 @@ export default function Home() {
       <section className="tiles">
         <Link to="/prose" className="tile">Prose</Link>
         <Link to="/poems" className="tile">Poems</Link>
-        <Link to="/journalism" className="tile">Journalism pieces</Link>
+        <Link to="/Articles_Essays" className="tile">Articles/Essays</Link>
       </section>
 
       {/* Right column with bio + email + CTA */}

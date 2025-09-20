@@ -4,8 +4,8 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 
 function Page({ children }) {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#feb6e2" }}>
-      <div className="mx-auto max-w-6xl px-6 py-10">{children}</div>
+    <div className="page">
+      <div className="page-inner">{children}</div>
     </div>
   );
 }
@@ -30,14 +30,14 @@ export default function DesignDetail() {
   return (
     <Page>
       <SiteHeader />
-      <button onClick={() => nav(-1)} className="mb-6 underline">
+      <button onClick={() => nav(-1)} className="backlink">
         ← Back
       </button>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-        <img src={d.image} alt={d.name} className="w-full rounded-2xl shadow" />
+      <div className="detail-grid">
+        <img src={d.image} alt={d.name} className="rounded-xl shadow" />
         <div>
-          <h1 className="text-3xl md:text-4xl font-semibold">{d.name}</h1>
-          <p className="mt-4 leading-7">{d.description}</p>
+          <h1 className="detail-title">{d.name}</h1>
+          <p className="detail-text">{d.description}</p>
         </div>
       </div>
     </Page>
